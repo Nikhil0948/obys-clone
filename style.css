@@ -13,7 +13,7 @@ html, body{
     height: 100%;
     width: 100%; 
     /* background-color: #286fff; */
-    background-color: #0B0B0B;
+    background-color: #030303;
     position: fixed;
     z-index: 999;
     padding: 22vh 13vw;
@@ -32,7 +32,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.2vw;
+    gap: 1vw;
 }
 
 .line1-part1 h5, .line1-part1 h6{
@@ -41,20 +41,100 @@ html, body{
     font-weight: 200;
 
 } 
+.line1-part1 h5{
+    /* background-color: red; */
+    text-align: right;
+    width: 6vw;
+}
 .line h1{
-    font-size: 6.3vw;
+    font-size: 6vw;
     text-transform: uppercase;
     font-weight: 900;
 }
 .line h2{
-    font-size: 6.3vw;
+    font-size: 4.6vw;
     text-transform: uppercase;
     font-weight: 900;
+    /* animation-name: animateNow; */
+    /* isko zero rakh rhe hai jaise hi line h1 slide hokr upper aayega uske baad hum now mai animation ka naam set kr denge */
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
 }
+
+/* now animation  */
+@keyframes animateNow {
+    0% {
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: white;
+        opacity: 1;
+    }
+
+    12.5% {
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 1;
+    }
+
+    25% {
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: white;
+        opacity: 1;
+    }
+
+    37.5% {
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 1;
+    }
+
+    50% {
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: white;
+        opacity: 1;
+    }
+
+    62.5% {
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 1;
+    }
+
+    75% {
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: white;
+        opacity: 1;
+    }
+
+    87.5% {
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        opacity: 1;
+    }
+
+    100% {
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: white;
+        opacity: 1;
+    }
+}
+
 #main{
     position: relative;
+    background-color: #030303;
+
 }
 #page1{
     height: 100vh;
-    background-color: #151515;
+    width: 100%;
+    background-color: #1b1a1a;
 }
