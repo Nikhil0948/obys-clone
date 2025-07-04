@@ -70,7 +70,7 @@ html, body{
     /* isko zero rakh rhe hai jaise hi line h1 slide hokr upper aayega uske baad hum now mai animation ka naam set kr denge */
     opacity: 0;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 5s; 
 }
 
 /* now animation  */
@@ -141,7 +141,7 @@ html, body{
 
 #main{
     position: relative;
-    background-color: #030303;
+    background-color: #1b1a1a;
 
 }
 #page1{
@@ -190,6 +190,11 @@ html, body{
     line-height: 7vw;
     text-transform: uppercase;
 }
+.hero h2{
+    border-bottom: 0.5vw solid #fff;
+    padding-bottom: 0.8vw;
+    /* transition: all ease 0.3s; */
+}
 #hero3{
     display: flex;
 }
@@ -197,5 +202,133 @@ html, body{
     -webkit-text-stroke: 1px #c6c3c3;
     color: transparent;
     font-weight: 500;
+    border-bottom: transparent;
+}
 
+/* page2  */
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #1b1a1a;
+    padding-top: 17vh;
+    position: relative;
+}
+
+#video-container{
+    height: 66vh;
+    width: 71vw;
+    position: relative;
+    left: 28%;
+    background-image: url('https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg');
+}
+#video-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#video-cursor{
+    width: 9vw;
+    height: 9vw;
+    position: absolute;
+    top: -10%;
+    left: 80%;
+    background-color: #FFA63D;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+} 
+#video-cursor i{
+    font-size: 2vw  ;
+}
+
+#page3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(53, 53, 53);
+}
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1b1a1a;
+    position: relative;
+    padding-top: 5vh;
+}
+#page4-content{
+    width: 72vw;
+    position: relative;
+    margin-left: 27%;
+}
+#page4-content h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+}
+
+#page4-content .underline{
+    height: 1px;
+    background-color: #aaaaaa;
+    width: 100%;
+    margin: 5vw 0;
+}
+#page4-content>p{
+    font-size: 2.2vw;
+    width: 50%;
+    margin-bottom: 3vw;
+}
+
+#page4-flex{
+    display: flex;
+}
+#page4-flex img{
+    width: 47%;
+}
+#page4-flex .imageSider{
+    margin-left: 1.5vw;
+    line-height: 1.5vw;
+    font-size: 1vw;
+    width: 50%;
+    margin-bottom: 1.5vw;
+}
+
+#page4-blue-div{
+    background-color: #3F7DF4;
+    width: 35vw;
+    padding: 4vw 3.5vw;
+    position: relative;
+    margin-top: -32vh;
+    margin-left: 24vw;
+}
+.blue-div-elem{
+    display: flex;
+    align-items: flex-start;    
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding: 2vw 0;
+}
+.blue-div-elem p{
+    width: 40%;
+    font-size: 1vw;
+
+}
+.blue-div-elem h4{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-color: #1b1a1a;
 }
