@@ -15,7 +15,7 @@ html, body{
     border: 1px solid rgb(185, 185, 185);
     border-radius: 50%;
     position: fixed;
-    z-index: 999;
+    z-index: 99;
     mix-blend-mode: difference;
     transform: translate(-50%, -50%);
 
@@ -141,13 +141,13 @@ html, body{
 
 #main{
     position: relative;
-    background-color: #1b1a1a;
+    background-color: #151515;
 
 }
 #page1{
     height: 100vh;
     width: 100%;
-    background-color: #1b1a1a;
+    /* background-color: #151515; */
 }
 
 #page1 #nav{
@@ -176,6 +176,7 @@ html, body{
     height: fit-content;
     /* background-color: red; */
     overflow: hidden;
+    
 }
 .hero:nth-child(2){
     margin-top: 6vh;
@@ -184,6 +185,16 @@ html, body{
     font-size: 7vw;
     line-height: 7vw;
     text-transform: uppercase;
+    position: relative;
+}
+#hero1::before {
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: 18%;
+    top: 23%;
 }
 .hero h2, .hero h3{
     font-size: 7vw;
@@ -209,7 +220,7 @@ html, body{
 #page2{
     height: 100vh;
     width: 100%;
-    background-color: #1b1a1a;
+    /* background-color: #1b1a1a; */
     padding-top: 17vh;
     position: relative;
 }
@@ -254,15 +265,128 @@ html, body{
 }
 
 #page3{
-    width: 100%;
     min-height: 100vh;
-    background-color: rgb(53, 53, 53);
+    width: 100%;
+    position: relative;
+    /* background-color: rgb(53, 53, 53); */
+    padding: 17vh 2vw;
+    margin: 20vh 0;
 }
 
+#page3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 28vw;
+}
+
+#page3 h1::before {
+    content: "02";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -13%;
+    top: 6%;
+}
+#page3 .underline{
+    margin-left: 28vw ;
+}
+
+#image-div-container{
+    /* background-color: red; */
+    padding: 1vw;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start ;
+    flex-wrap: wrap;
+}
+.image-div{
+    height: 38vw;
+    position: relative;
+    overflow: hidden;
+    width: 27vw;
+    /* background-color: blue; */
+    flex-shrink: 0;
+    margin: 2vw;
+}
+.image-div:nth-child(1){
+    height: 29vw;
+    width: 21vw;
+}
+.image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.page3-circle1{
+    width: 23vw;
+    height: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%; 
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+    position: relative;
+}
+.page3-circle1 svg{
+    height: 30%;
+}
+.page3-circle2{
+    width: 23vw;
+    height: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.page3-circle2 svg{
+    height: 30%;
+    rotate: -45deg;
+}
+
+.circle-in{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    transition: all ease .6s;
+    transition-delay: .1s;
+    align-items: center;
+    border-radius: 50%;
+    scale: 0;
+}
+.circle-in p{
+    font-size: 1vw;
+    color: #000;
+    width: 70%;
+    text-align: center;
+    font-weight: 500;
+    transition: all ease .6s;
+    transition-delay: .3s;
+    scale: 0;
+}
+
+.page3-circle1:hover .circle-in, .page3-circle1:hover .circle-in p{
+    scale: 1;
+}
+.page3-circle2:hover .circle-in, .page3-circle2:hover .circle-in p{
+    scale: 1;
+}
 #page4{
     min-height: 100vh;
     width: 100%;
-    background-color: #1b1a1a;
+    /* background-color: #1b1a1a; */
     position: relative;
     padding-top: 5vh;
 }
@@ -274,6 +398,17 @@ html, body{
 #page4-content h1{
     font-size: 7vw;
     text-transform: uppercase;
+    position: relative;
+}
+
+#page4-content h1::before {
+    content: "03";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -13%;
+    top: 6%;
 }
 
 #page4-content .underline{
@@ -326,9 +461,158 @@ html, body{
     font-size: 1.5vw;
     font-weight: 500;
 }
+.underline1{
+    height: 1px;
+    background-color: #aaaaaa;
+    width: 100%;
+    margin: 5vw 0 0 0;
+}
 
 #page5{
     height: 100vh;
     width: 100%;
-    background-color: #1b1a1a;
+    position: relative;
+    /* background-color: #1b1a1a; */
+}
+
+.elem{
+    /* color: white; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: -2vw;
+}
+
+.elem h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    margin-right: 16px;
+    display: inline-block;
+    animation: animeXtranslate 14s linear infinite;
+}
+
+@keyframes animeXtranslate {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+
+.elem2{
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin-bottom: -2vw;
+}
+
+.elem2 h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 400;
+    color: transparent;
+    text-transform: uppercase;
+    margin-right: 16px;
+    display: inline-block;
+    transform: translateX(calc(-100% - 20px));
+    animation: animeXtranslate 14s linear infinite reverse;
+}
+
+.elem span{
+    font-family: "Silk Serif";
+    color: transparent;
+}
+.elem2 span{
+    font-family: "Silk Serif";
+    color: transparent;
+}
+
+#footer {
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding-left: 28vw;
+    margin-top: 5vw;
+    padding-right: 2vw;
+}
+
+#footer h1 {
+    font-size: 7.2vw;
+    text-transform: uppercase;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#footer-text h2 {
+    font-size: 7.2vw;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10%;
+    font-weight: 500;
+
+    left: 0;
+    font-family: "silk serif";
+}
+
+#footer-text h2 span {
+    font-family: "silk serif";
+    opacity: 0;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+#footer h1::before {
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -13%;
+    top: 6%;
+}
+
+.underline {
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin: 3vw 0;
+}
+
+#footer-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+    margin-bottom: 6vw;
+}
+
+#footer-div h6 {
+    font-size: 0.9vw;
+    margin-bottom: 1.5vw;
+    font-weight: 500;
+}
+
+.box {
+    width: 20%;
+}
+
+#footer-div h5 {
+    font-size: 1.4vw;
+    font-weight: 500;
+    /* margin: 0.1vh 0; */
+}
+
+#footer > h5 {
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+._canvas_container{
+    z-index: 999999 !important;
+    pointer-events: none;
 }
