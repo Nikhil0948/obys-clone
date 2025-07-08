@@ -7,7 +7,7 @@
 }
 html, body{
     height: 100%;
-    width: 100%;    
+    width: 100%;        
 }
 .mousefollower {
     border: 2px solid #fff;
@@ -203,6 +203,8 @@ html, body{
 }
 #hero3{
     display: flex;
+    position: relative;
+    z-index: 99;
 }
 #hero3 h2:hover{
     -webkit-text-stroke: 1px #c6c3c3;
@@ -537,6 +539,10 @@ html, body{
     margin-top: 5vw;
     padding-right: 2vw;
 }
+#footer-text {
+        position: relative;
+        /* background-color: red; */
+}
 
 #footer h1 {
     font-size: 7.2vw;
@@ -544,6 +550,7 @@ html, body{
     /* background-color: blue; */
     position: relative;
 }
+
 
 #footer-text h2 {
     font-size: 7.2vw;
@@ -613,4 +620,14 @@ html, body{
 ._canvas_container{
     z-index: 999999 !important;
     pointer-events: none;
+}
+
+#flag {
+    height: 25vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
 }
